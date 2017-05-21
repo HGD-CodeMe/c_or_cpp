@@ -1,0 +1,72 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class Stack
+{
+public:
+	Stack();
+	~Stack();
+	string StackPop();
+	void StackPush(string &ch);
+private:
+    int *base,*top;
+	int MAX;
+};
+Stack::Stack()
+{
+	MAX=100;
+	base=new int[MAX];
+	base=top=0;
+}
+Stack::~Stack()
+{
+	delete base;
+}
+void Stack::StackPush(string &ch)
+{
+	if(top!=MAX)
+	{
+		base[top]=ch;
+		top++;
+	}
+    else
+	    cout<<"Stack is full!"<<endl;	
+}
+string Stack::StackPop()
+{
+	if(top!=base)
+	{
+		top--;
+		return base[top];
+	}
+	else
+		cout<<"Stack is null!"<<ensl;
+}
+void Palindrom(Stack &S)
+{
+	string ch;
+	int length=0;
+	string a="exit";
+	cout<<"please input elem,over input exit"<<endl;
+	while(ch!=a)
+	{
+		cin>>ch[length];
+		length++;
+	}
+	for(int i=0;i<strlen(ch)/2;i++)
+	{
+		S.StackPush(ch[i]);
+	}
+	for(int k=strlen;k>strlen(ch)/2;k--)
+	{
+		if(strcmp(S.StackPop,ch[k]==0)
+			cout<<"the char is Palindrom"<<endl;
+		else
+			cout<<"the char is not Palindrom"<<endl;
+	}	
+}
+main()
+{
+	Stack S;
+	Palindrom(S);
+}

@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 树 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3139.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/树.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\My Procedure\数据结构\树.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3139.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP313A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/树.pdb" /debug /machine:I386 /out:"Debug/树.exe" /pdbtype:sept 
+".\Debug\树.obj"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP313A.tmp"
+<h3>Output Window</h3>
+Compiling...
+树.cpp
+E:\My Procedure\数据结构\树.cpp(17) : error C2296: '&' : illegal, left operand has type 'class Node *'
+E:\My Procedure\数据结构\树.cpp(17) : error C2297: '&' : illegal, right operand has type 'class Node *'
+E:\My Procedure\数据结构\树.cpp(18) : error C2448: '<Unknown>' : function-style initializer appears to be a function definition
+E:\My Procedure\数据结构\树.cpp(35) : error C2065: 'CreateTree' : undeclared identifier
+E:\My Procedure\数据结构\树.cpp(36) : warning C4508: 'main' : function should return a value; 'void' return type assumed
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+树.exe - 4 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
